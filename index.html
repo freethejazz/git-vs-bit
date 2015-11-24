@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github vs. Bitbucket Companion</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container" class="row">
+    <section>
+    <h1>Github vs. Bitbucket Companion</h1>
+    <p>Here is the tool referenced in the <a href="http://www.infoworld.com/d/application-development/bitbucket-vs-github-which-project-host-has-the-most-227061" target="_blank">InfoWorld article</a>. Enjoy!</p>
+    </section>
+
+    <section>
+    <h2>Cost Comparison</h2>
+
+    <div id="cost-compare">
+      <p>
+      An organization with 
+      <select id="repos">
+        <option value="25">0-10</option>
+        <option value="50">11-20</option>
+        <option value="100">21-50</option>
+        <option value="200">51-125</option>
+      </select>
+      private repositories and 
+      <select id="contributors">
+        <option value="0">0-5</option>
+        <option value="10">6-10</option>
+        <option value="25">11-25</option>
+        <option value="50">26-50</option>
+        <option value="100">51-100</option>
+        <option value="200">&gt;100</option>
+      </select>
+      contributing developers.
+      </p>
+      <div id="results" class="cf">
+        <div id="winner"></div>
+        <div class="one-result">
+          <div class="host">Github</div>
+          <div class="cost">$<span id="git-cost"></span></div>
+        </div>
+        <div class="one-result">
+          <div class="host">Bitbucket</div>
+          <div class="cost">$<span id="bit-cost"></span></div>
+        </div>
+      </div>
+    </div>
+    </section>
+    </div>
+    <!-- end container -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38041063-4', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+
+</html>
